@@ -9,14 +9,13 @@
 
 html {
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 }
 
 html, body {
     padding: 0;
     margin: 0;
-
-    width: 90%;
-    height: 90%;
 }
 
 body {
@@ -27,6 +26,9 @@ body {
 
     font-family: var(--fontBody);
     font-weight: 400;
+
+    width: 80%;
+    height: 80%;
 }
 
 header {
@@ -118,13 +120,17 @@ main {
 }
 
 @media only screen and (min-width: 600px) {
+
     body {
         background-image: url("../images/bg-desktop.svg");
         padding: 3% 5%;
+        width: 90%;
+        height: 89%;
     }
 
     header {
-        height: 10rem;
+        height: 9.5rem;
+        width: 100%;
     }
     
     header img{
@@ -133,17 +139,20 @@ main {
 
     .main-content {
         flex-direction: row;
+        width: 100%;
     }
 
     .main-content-images {
-        flex: 1.8;
+        width: 55%;
+    }
+    
+    .main-content-images img {
+        width: 100%;
     }
 
     .main-content-text {
         text-align: start;
-        flex: 1;
-
-        font-size: 14px;
+        width: 35%;
 
         padding: 2% 5%;
         padding-right: 0;
@@ -155,8 +164,10 @@ main {
     }
 
     .main-content-text button {
-        width: 40%;
+        width: 45%;
         padding: 1rem;
+
+        font-size: 16px;
     }
 
     .main-icons {
